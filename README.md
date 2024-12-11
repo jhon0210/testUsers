@@ -11,28 +11,28 @@ Este proyecto es una apiRestFull de gestión de usuarios y empresas, diseñada p
 4. Ejecutar el comando docker compose up --build
 5. Seguir el siguiente orden para la ejecucion de los Endpoints utilizando postman, thunderClient o el de su preferencia.
 
-   ## Agregar usuario
+   # Agregar usuario
    POST: /api/users
    BODY: {
           "nombre": "XXXXXX",
           "usuario": "XXXXX",
           "clave": "XXXX"
          }
-## para utilizar los demas enpoints se debe realizar la autenticacion y generar el token
+# para utilizar los demas enpoints se debe realizar la autenticacion y generar el token
 
-   ## Autenticacion usuario
+   # Autenticacion usuario
    POST: /api/auth
    BODY: {
           "usuario": "XXXX",
           "clave": "XXXX"
          }
 
-   ## Listar usuario
+   # Listar usuario
    GET: /api/users
    TOKEN:
    Authorization: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
 
-    ## Vincular usuario
+   # Vincular usuario
    POST: /api/vincular
    BODY: {
           "usuario": 1,
@@ -43,7 +43,7 @@ Este proyecto es una apiRestFull de gestión de usuarios y empresas, diseñada p
    Authorization: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 
-   ## Asignar punto de venta
+   # Asignar punto de venta
    POST: /api/asignar
    BODY: {
           "empresa_id": 1,
@@ -52,6 +52,6 @@ Este proyecto es una apiRestFull de gestión de usuarios y empresas, diseñada p
    TOKEN:
    Authorization: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-## NOTA
+# NOTA
 Las tablas usuarios, roles, empresas y puntos_venta ya tienen registros para realizar la vinculacion de usuarios a empresas y roles y tambien la asignacion de puntos de ventas
 a empresas con los endpoints /api/vincular y /api/asignar
