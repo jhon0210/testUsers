@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mysqldb:
+     image: mysql
+     environment:
+         - MYSQL_ROOT_PASSWORD=$DB_PASSWORD
+         - MYSQL_DATABASE=$DB_DATABASE
+     ports:
+       - $DB_PORT:$DB_PORT
+      
+  app:
+    build: .
+    depends_on:
+      - mysqldb
+    links:
+      - mysqldb
+    ports:
+      - $PORT_SERV:$PORT_SERV
