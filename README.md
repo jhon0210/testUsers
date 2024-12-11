@@ -1,9 +1,9 @@
-# Proyecto de Gestión de Usuarios y Empresas
+### Proyecto de Gestión de Usuarios y Empresas
 
 Este proyecto es una apiRestFull de gestión de usuarios y empresas, diseñada para manejar la relación entre usuarios, empresas, roles y puntos de venta.
 
 
-# Pasos de Instalación
+### Pasos de Instalación
 
 1. Clona el repositorio ejecutando el comando git clone https://github.com/jhon0210/testUsers.git.
 2. Ubicarse en la carpeta generado con cd "carpeta_generada".
@@ -11,12 +11,13 @@ Este proyecto es una apiRestFull de gestión de usuarios y empresas, diseñada p
 4. Ejecutar el comando docker compose up --build
 5. Seguir el siguiente orden para la ejecucion de los Endpoints utilizando postman, thunderClient o el de su preferencia.
 
-   # Agregar usuario
+   ### Agregar usuario
    POST: /api/users
-   BODY: {
-          "nombre": "XXXXXX",
-          "usuario": "XXXXX",
-          "clave": "XXXX"
+   BODY: ```json
+         {
+           "nombre": "XXXXXX",
+           "usuario": "XXXXX",
+           "clave": "XXXX"
          }
 # para utilizar los demas enpoints se debe realizar la autenticacion y generar el token
 
