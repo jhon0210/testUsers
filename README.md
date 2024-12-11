@@ -3,7 +3,7 @@
 Este proyecto es una apiRestFull de gestión de usuarios y empresas, diseñada para manejar la relación entre usuarios, empresas, roles y puntos de venta.
 
 
-## Pasos de Instalación
+# Pasos de Instalación
 
 1. Clona el repositorio ejecutando el comando git clone https://github.com/jhon0210/testUsers.git.
 2. Ubicarse en la carpeta generado con cd "carpeta_generada".
